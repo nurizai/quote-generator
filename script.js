@@ -41,7 +41,7 @@ async function getQuote() {
         // Stop Loader, Show Quote
         removeLoadingSpinner();
     } catch (error) {
-        // getQuote();
+        setTimeout(getQuote, 2000);
     }
 }
 
